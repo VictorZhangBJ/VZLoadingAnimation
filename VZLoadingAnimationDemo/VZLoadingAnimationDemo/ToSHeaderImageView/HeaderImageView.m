@@ -7,7 +7,7 @@
 //
 
 #import "HeaderImageView.h"
-#import "UIImageView+WebCache.h"
+//#import "UIImageView+WebCache.h"
 
 #define TIME_INTERVAL 3
 #define ScreenWidth self.bounds.size.width
@@ -150,7 +150,7 @@
     for(int i=0;i<imageCount;i++){
         KIImageView *imageView = [[KIImageView alloc]init];
         if (isURL == YES) {
-            [imageView sd_setImageWithURL:[NSURL URLWithString:[newImageArray objectAtIndex:i]] placeholderImage:nil];
+            //[imageView sd_setImageWithURL:[NSURL URLWithString:[newImageArray objectAtIndex:i]] placeholderImage:nil];
 
         }else{
             [imageView setImage:[newImageArray objectAtIndex:i]];

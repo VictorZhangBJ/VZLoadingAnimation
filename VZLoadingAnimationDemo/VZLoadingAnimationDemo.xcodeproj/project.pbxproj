@@ -15,6 +15,7 @@
 		3D3BEADE1C103DE300B4C0F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3BEADC1C103DE300B4C0F4 /* LaunchScreen.storyboard */; };
 		3D3BEAE91C1057F200B4C0F4 /* UIScrollView+VZRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3BEAE81C1057F200B4C0F4 /* UIScrollView+VZRefresh.m */; };
 		3D3BEAEF1C105F5700B4C0F4 /* HeaderImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3BEAEC1C105F5700B4C0F4 /* HeaderImageView.m */; };
+		576F09771C10976D006F4C13 /* VZLoadingAnimation in Resources */ = {isa = PBXBuildFile; fileRef = 576F09761C10976D006F4C13 /* VZLoadingAnimation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3D3BEAE81C1057F200B4C0F4 /* UIScrollView+VZRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+VZRefresh.m"; sourceTree = "<group>"; };
 		3D3BEAEB1C105F5700B4C0F4 /* HeaderImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderImageView.h; sourceTree = "<group>"; };
 		3D3BEAEC1C105F5700B4C0F4 /* HeaderImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderImageView.m; sourceTree = "<group>"; };
+		576F09761C10976D006F4C13 /* VZLoadingAnimation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = VZLoadingAnimation; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +66,9 @@
 		3D3BEACD1C103DE300B4C0F4 /* VZLoadingAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				576F09761C10976D006F4C13 /* VZLoadingAnimation */,
 				3D3BEAEA1C105F5700B4C0F4 /* ToSHeaderImageView */,
 				3D3BEAE61C10562300B4C0F4 /* VZRefresh */,
-				3D3BEAE51C103E0400B4C0F4 /* VZLoadingAnimation */,
 				3D3BEAD11C103DE300B4C0F4 /* AppDelegate.h */,
 				3D3BEAD21C103DE300B4C0F4 /* AppDelegate.m */,
 				3D3BEAD41C103DE300B4C0F4 /* ViewController.h */,
@@ -86,13 +88,6 @@
 				3D3BEACF1C103DE300B4C0F4 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3D3BEAE51C103E0400B4C0F4 /* VZLoadingAnimation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VZLoadingAnimation;
 			sourceTree = "<group>";
 		};
 		3D3BEAE61C10562300B4C0F4 /* VZRefresh */ = {
@@ -170,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				576F09771C10976D006F4C13 /* VZLoadingAnimation in Resources */,
 				3D3BEADE1C103DE300B4C0F4 /* LaunchScreen.storyboard in Resources */,
 				3D3BEADB1C103DE300B4C0F4 /* Assets.xcassets in Resources */,
 				3D3BEAD91C103DE300B4C0F4 /* Main.storyboard in Resources */,
@@ -334,6 +330,7 @@
 				3D3BEAE41C103DE300B4C0F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
