@@ -15,7 +15,8 @@
 		3D3BEADE1C103DE300B4C0F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3BEADC1C103DE300B4C0F4 /* LaunchScreen.storyboard */; };
 		3D3BEAE91C1057F200B4C0F4 /* UIScrollView+VZRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3BEAE81C1057F200B4C0F4 /* UIScrollView+VZRefresh.m */; };
 		3D3BEAEF1C105F5700B4C0F4 /* HeaderImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3BEAEC1C105F5700B4C0F4 /* HeaderImageView.m */; };
-		576F09771C10976D006F4C13 /* VZLoadingAnimation in Resources */ = {isa = PBXBuildFile; fileRef = 576F09761C10976D006F4C13 /* VZLoadingAnimation */; };
+		576F097B1C1097F7006F4C13 /* VZLoadingAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 576F097A1C1097F7006F4C13 /* VZLoadingAnimationView.m */; };
+		576F097E1C10AB4A006F4C13 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 576F097D1C10AB4A006F4C13 /* AnimationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +34,10 @@
 		3D3BEAE81C1057F200B4C0F4 /* UIScrollView+VZRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+VZRefresh.m"; sourceTree = "<group>"; };
 		3D3BEAEB1C105F5700B4C0F4 /* HeaderImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderImageView.h; sourceTree = "<group>"; };
 		3D3BEAEC1C105F5700B4C0F4 /* HeaderImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderImageView.m; sourceTree = "<group>"; };
-		576F09761C10976D006F4C13 /* VZLoadingAnimation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = VZLoadingAnimation; sourceTree = "<group>"; };
+		576F09791C1097F7006F4C13 /* VZLoadingAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZLoadingAnimationView.h; sourceTree = "<group>"; };
+		576F097A1C1097F7006F4C13 /* VZLoadingAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZLoadingAnimationView.m; sourceTree = "<group>"; };
+		576F097C1C10AB4A006F4C13 /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
+		576F097D1C10AB4A006F4C13 /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +70,15 @@
 		3D3BEACD1C103DE300B4C0F4 /* VZLoadingAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
-				576F09761C10976D006F4C13 /* VZLoadingAnimation */,
+				576F09781C1097E2006F4C13 /* VZLoadingAnimationView */,
 				3D3BEAEA1C105F5700B4C0F4 /* ToSHeaderImageView */,
 				3D3BEAE61C10562300B4C0F4 /* VZRefresh */,
 				3D3BEAD11C103DE300B4C0F4 /* AppDelegate.h */,
 				3D3BEAD21C103DE300B4C0F4 /* AppDelegate.m */,
 				3D3BEAD41C103DE300B4C0F4 /* ViewController.h */,
 				3D3BEAD51C103DE300B4C0F4 /* ViewController.m */,
+				576F097C1C10AB4A006F4C13 /* AnimationViewController.h */,
+				576F097D1C10AB4A006F4C13 /* AnimationViewController.m */,
 				3D3BEAD71C103DE300B4C0F4 /* Main.storyboard */,
 				3D3BEADA1C103DE300B4C0F4 /* Assets.xcassets */,
 				3D3BEADC1C103DE300B4C0F4 /* LaunchScreen.storyboard */,
@@ -106,6 +112,15 @@
 				3D3BEAEC1C105F5700B4C0F4 /* HeaderImageView.m */,
 			);
 			path = ToSHeaderImageView;
+			sourceTree = "<group>";
+		};
+		576F09781C1097E2006F4C13 /* VZLoadingAnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				576F09791C1097F7006F4C13 /* VZLoadingAnimationView.h */,
+				576F097A1C1097F7006F4C13 /* VZLoadingAnimationView.m */,
+			);
+			path = VZLoadingAnimationView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,7 +180,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				576F09771C10976D006F4C13 /* VZLoadingAnimation in Resources */,
 				3D3BEADE1C103DE300B4C0F4 /* LaunchScreen.storyboard in Resources */,
 				3D3BEADB1C103DE300B4C0F4 /* Assets.xcassets in Resources */,
 				3D3BEAD91C103DE300B4C0F4 /* Main.storyboard in Resources */,
@@ -179,7 +193,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				576F097B1C1097F7006F4C13 /* VZLoadingAnimationView.m in Sources */,
 				3D3BEAD61C103DE300B4C0F4 /* ViewController.m in Sources */,
+				576F097E1C10AB4A006F4C13 /* AnimationViewController.m in Sources */,
 				3D3BEAE91C1057F200B4C0F4 /* UIScrollView+VZRefresh.m in Sources */,
 				3D3BEAEF1C105F5700B4C0F4 /* HeaderImageView.m in Sources */,
 				3D3BEAD31C103DE300B4C0F4 /* AppDelegate.m in Sources */,
